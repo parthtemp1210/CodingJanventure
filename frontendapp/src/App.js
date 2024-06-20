@@ -1,9 +1,9 @@
 import './App.css';
-import TodoList from './Components/TodoList.js';
+import Home from './Pages/Home.js';
 function App() {
   return (
    <>
-    <TodoList/>
+    <Home/>
     <div/>
    </>
   );
