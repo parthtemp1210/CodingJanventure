@@ -1,9 +1,10 @@
 import './App.css';
-import { BrowserRouter,Routes,Route,Navigate } from "react-router-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 // Import different pages
 import Home from './Pages/Home.js';
 import About from './Pages/About.js';
 import Tasks from './Pages/Tasks.js';
+import Error from './Pages/Errorpage.js';
 
 
 
@@ -16,7 +17,7 @@ function App() {
         <Route path='Home' element={<Home/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Tasks' element={<Tasks/>}/>
-        <Route path="*" element={<Navigate to="/ErrorPage" replace={true}/>}/>
+        <Route path="*" element={<Error/>}/>
       </Routes>
     </BrowserRouter>
    </>
